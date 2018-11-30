@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>くらうんキャラ一覧｜<?= $page ?></title>
+    <!--JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /*ヘッダーとコンテンツの要素間でコンテンツが重複しないように設定するcss 固定ヘッダー処理とは関係ない*/
+     .m-50{
+         margin-top: 50px;
+     }
+     .m-100 {
+            margin-top: 100px;
+      }
+    </style>
+</head>
+
+<body>
+    <!--navbar-fixed-topを削除すればヘッダーが固定されなくなる-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- data-target="#togglebar"で、ハンバーガーメニューを選択するとメニューリンクを表示する-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#togglebar">
+                    <!--以下からハンバーガーメニューのhtml要素 画面が縮小されると表示-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <!--icon-barはBootstrapのcss -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">くらうんキャラ一覧</a>
+            </div>
+            <!--メニューの要素-->
+            <div class="collapse navbar-collapse" id="togglebar">
+                <ul class="nav navbar-nav">
+                    <!--以下でページ内リンクを設定している-->
+                    <li><a href="">企画別</a></li>
+ 	                  <li><a href="">名前順</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
